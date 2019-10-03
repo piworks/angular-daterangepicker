@@ -1,7 +1,9 @@
+var moment = require('moment');
 (function() {
   var pickerModule;
 
   pickerModule = angular.module('daterangepicker', []);
+  pickerModule.constant("moment", moment);
 
   pickerModule.constant('dateRangePickerConfig', {
     cancelOnOutsideClick: true,
@@ -12,7 +14,7 @@
     }
   });
 
-  pickerModule.directive('dateRangePicker', ['$compile', '$timeout', '$parse', 'dateRangePickerConfig', function($compile, $timeout, $parse, dateRangePickerConfig) {
+  pickerModule.directive('dateRangePicker', ['$compile', '$timeout', '$parse', 'dateRangePickerConfig', 'moment', function($compile, $timeout, $parse, dateRangePickerConfig, moment) {
     return {
       require: 'ngModel',
       restrict: 'A',

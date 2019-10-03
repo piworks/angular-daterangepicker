@@ -13,7 +13,8 @@
   "private": false,
   "dependencies": {
     "angular": "^1.6.6",
-    "bootstrap-daterangepicker": "^3.0.5"
+    "bootstrap-daterangepicker": "^3.0.5",
+    "moment": "^2.24.0"
   },
   "main": "index.js",
   "devDependencies": {
