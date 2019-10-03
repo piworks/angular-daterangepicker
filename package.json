@@ -11,6 +11,10 @@
   "description": "Angular.js wrapper for Dan Grosmann's bootstrap date range picker (https://github.com/dangrossman/bootstrap-daterangepicker).",
   "license": "MIT",
   "private": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
   "dependencies": {
     "angular": "^1.6.6",
     "bootstrap-daterangepicker": "^3.0.5",
